@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GameZone City - El portal definitivo de videojuegos, viviendas gamer, anime y moda urbana.">
+    <title>GameZone City 🎮</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- FONDO Y EFECTOS -->
+    <div class="background-grid"></div>
+    <div class="light-orb orb-1"></div>
+    <div class="light-orb orb-2"></div>
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="header">
+        <a href="#inicio" class="logo">🎮 GAMEZONE <span>CITY</span></a>
+        <nav class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#casas">Casas</a>
+            <a href="#apartamentos">Apartamentos</a>
+            <a href="#juegos">Videojuegos</a>
+            <a href="#anime">Anime</a>
+            <a href="#ropa">Ropa</a>
+        </nav>
+        <div class="header-actions">
+            <button id="soundButton" class="header-button" title="Música">🔇</button>
+            <button id="themeButton" class="header-button" title="Modo Claro/Oscuro">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO / PORTADA -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <span class="small-title">🚀 BIENVENIDO A GAMEZONE CITY</span>
+                <h1 id="heroTitle">GAMEZONE <span>CITY</span></h1>
+                <p id="heroDescription">
+                    Una metrópolis digital diseñada para amantes de los videojuegos, el anime, la moda urbana y la tecnología.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#juegos" class="main-button">🎮 Explorar Videojuegos</a>
+                    <a href="#casas" class="second-button">🏠 Ver Inmuebles</a>
+                </div>
+            </div>
+
+            <div class="hero-slider">
+                <div class="hero-image" id="heroImage">
+                    <div class="hero-glow"></div>
+                </div>
+                <button class="slider-button left" id="previousHero">❮</button>
+                <button class="slider-button right" id="nextHero">❯</button>
+            </div>
+        </section>
+
+        <!-- ESTADÍSTICAS -->
+        <section class="stats">
+            <div class="stat">
+                <strong>10+</strong>
+                <span>Casas Gamer</span>
+            </div>
+            <div class="stat">
+                <strong>10+</strong>
+                <span>Apartamentos</span>
+            </div>
+            <div class="stat">
+                <strong>10+</strong>
+                <span>Videojuegos</span>
+            </div>
+            <div class="stat">
+                <strong>10+</strong>
+                <span>Series Anime</span>
+            </div>
+        </section>
+
+        <!-- CASAS GAMER -->
+        <section id="casas" class="section">
+            <div class="section-title">
+                <span>🏠 VIVE A OTRO NIVEL</span>
+                <h2>Casas Gamer</h2>
+                <p>Residencias de lujo equipadas con tecnología de punta y zonas de streaming.</p>
+            </div>
+            <div class="cards" id="casasContainer"></div>
+        </section>
+
+        <!-- APARTAMENTOS -->
+        <section id="apartamentos" class="section dark-section">
+            <div class="section-title">
+                <span>🏢 TU ESPACIO URBANO</span>
+                <h2>Apartamentos Cyber</h2>
+                <p>Lofts modernos con conectividad de alta velocidad y vistas espectaculares.</p>
+            </div>
+            <div class="cards" id="apartamentosContainer"></div>
+        </section>
+
+        <!-- VIDEOJUEGOS -->
+        <section id="juegos" class="section">
+            <div class="section-title">
+                <span>🎮 CATÁLOGO COMPLETO</span>
+                <h2>Videojuegos</h2>
+                <p>Explora los títulos más destacados de todas las categorías.</p>
+            </div>
+
+            <div class="category-buttons" id="categoryFilter">
+                <button class="active" data-category="todos">🎮 Todos</button>
+                <button data-category="roblox">🟦 Roblox</button>
+                <button data-category="accion">💥 Acción</button>
+                <button data-category="aventura">🗺️ Aventura</button>
+                <button data-category="carreras">🏎️ Carreras</button>
+                <button data-category="pelea">🥊 Pelea</button>
+            </div>
+
+            <div class="search-box">
+                🔎 <input type="text" id="gameSearch" placeholder="Buscar por título o categoría...">
+            </div>
+
+            <div class="game-grid" id="gameGrid"></div>
+        </section>
+
+        <!-- ANIME -->
+        <section id="anime" class="section dark-section">
+            <div class="section-title">
+                <span>🍥 SERIES Y PELÍCULAS</span>
+                <h2>Sección Anime</h2>
+                <p>Disfruta de las mejores series con enlaces e imágenes en alta resolución.</p>
+            </div>
+            <div class="anime-grid" id="animeGrid"></div>
+        </section>
+
+        <!-- ROPA GAMER -->
+        <section id="ropa" class="section">
+            <div class="section-title">
+                <span>👕 FASHION & MERCH</span>
+                <h2>Ropa Urbana Gamer</h2>
+                <p>Colección exclusiva de prendas para lucir tu estilo en todo momento.</p>
+            </div>
+            <div class="clothing-grid" id="ropaGrid"></div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>🎮 GAMEZONE CITY</h2>
+        <p>Plataforma desarrollada para la comunidad gamer internacional.</p>
+        <div class="footer-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#casas">Casas</a>
+            <a href="#apartamentos">Apartamentos</a>
+            <a href="#juegos">Juegos</a>
+            <a href="#anime">Anime</a>
+            <a href="#ropa">Ropa</a>
+        </div>
+        <small>© 2026 GameZone City • Todos los derechos reservados.</small>
+    </footer>
+
+    <!-- MODAL PRINCIPAL -->
+    <div id="modal" class="modal">
+        <div class="modal-box">
+            <button class="close-modal" onclick="closeModal()">✕</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- REPRODUCTOR DE AUDIO DE FONDO RELAJANTE -->
+    <audio id="bgMusic" loop src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=lofi-study-112191.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
